@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trang chủ - Gấu bông online</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS(s)-->
+    <link rel="stylesheet" href="styles/font-awesome.min.css" />
+    <link rel="stylesheet" href="/styles/material-design-iconic-font.min.css" />
+    <link rel="stylesheet" href="styles/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <!--Header Start-->
+    <header class="site-header">
+        <div class="col">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <a class="navbar-brand align-items-center" href="#">
+                        <img src="images/logo.jpg" alt="Gấu bông online" width="90px" height="80px" />
+                        <strong class="site-logo d-inline-block align-items-center text-center">
+                <h2 class="ten-logo mt-2">Gấu Bông ONLINE</h2>
+              </strong>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <form id="search-box">
+                        <input id="search-text" type="text" name="keyword" placeholder="Nhập sản phẩm cần tìm" />
+                        <button id="search-btn" class="mx-3" type="submit">
+                <i
+                  class="fa fa-search"
+                  style="font-size: 20px; color: #fff"
+                ></i>
+              </button>
+                    </form>
+                </div>
+                <div class="col-md-3 text-start align-items-center mt-3 text-danger fs-5">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-phone" style="font-size: 20px"></i>
+                            <span class="fw-bold">Hotline:
+                  <a
+                    href="tel:0799951479"
+                    class="text-decoration-none text-danger"
+                    >0799.951.479</a
+                  >
+                </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col fs-5 fw-bold">
+                            <a href="/src/cart/index.html" class="text-decoration-none text-danger fs-5">
+                                <span>
+                    <i class="zmdi zmdi-shopping-cart"></i>
+                    Giỏ hàng (3)
+                  </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header End-->
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fs-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle=" modal-dialog-centeredcollapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse mx-lg-5" id="navbarSupportedContent">
+            <ul class="mx-5 navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white mx-4" aria-current="page" href="/">Trang chủ</a
+            >
+          </li>
+          <!--Category Start-->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-white mx-4"
+              href="/src/products/highend/index.html"
+              role="button"
+            >
+              Gấu bông cao cấp
+            </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white mx-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hoạt hình
+            </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="/src/products/cartoon/pooh/index.html">Gấu Pooh</a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="/src/products/cartoon/doraemon/index.html"
+                  >Doraemon</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/src/products/cartoon/pokemon/index.html"
+                  >Pikachu & Pokemon</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!--Category End-->
+          <!--About start-->
+          <li class="nav-item">
+            <a class="nav-link text-white mx-4" href="#">Giới thiệu</a>
+                        </li>
+                        <!--About end-->
+                        <!--All products Start-->
+                        <li class="nav-item">
+                            <a class="nav-link text-white mx-4" href="/src/products/index.html">Tất cả sản phẩm</a
+            >
+          </li>
+          <!--All products End-->
+          <!--Account Start-->
+          <li>
+            <a
+              class="nav-link text-white"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              style="margin-left: 6em"
+              >Tài khoản</a
+            >
+          </li>
+          <!--Account End-->
+        </ul>
+      </div>
+    </nav>
+    <!--Navbar End-->
+    <!--Login form Start-->
+    <div
+      class="modal fade"
+      id="loginModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">
+              Đăng nhập tài khoản
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="mb-2">Tài khoản</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="username"
+                  name="username"
+                />
+                <p class="text-danger" id="validateUserName"></p>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="mb-2">Mật khẩu</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password"
+                  name="password"
+                />
+                <p class="text-danger" id="validatePassword"></p>
+              </div>
+              <div class="text-center">
+                <a href="#" class="text-decoration-none"
+                  >Bạn đã quên mật khẩu?</a
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-primary"
+              data-bs-dismiss="#loginModal"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Đăng ký
+            </button>
+            <button class="btn btn-success" id="btnLogin">Đăng nhập</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Login form End-->
+    <!--Register form Start-->
+    <div
+      class="modal fade"
+      id="registerModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="registerModalLabel">
+              Đăng ký tài khoản
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="mb-2">Họ và Tên</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                />
+                <p class="text-danger" id="validateFullName"></p>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="mb-2">Địa chỉ email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+                <p class="text-danger" id="validateEmail"></p>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="mb-2">Số điện thoại</label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  id="phoneNo"
+                  name="phoneNo"
+                />
+                <p class="text-danger" id="validatePhoneNo"></p>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="mb-2">Tài khoản</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="newUserName"
+                  name="newUserName"
+                />
+                <p class="text-danger" id="validateNewUserName"></p>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="mb-2">Mật khẩu</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="newPassword"
+                  name="newPassword"
+                />
+                <p class="text-danger" id="validateNewPassword"></p>
+              </div>
+              <div class="mb-3">
+                <label for="rePassword" class="mb-2">Nhập lại mật khẩu</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="rePassword"
+                  name="rePassword"
+                />
+                <p class="text-danger" id="validateRePassword"></p>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" id="btnRegister">Đăng ký</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Register form End-->
+    <!--Banner carousel Start-->
+    <div
+      id="carouselExample"
+      class="carousel slide mb-4"
+      data-bs-ride="carouselExample"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/banner/banner1.jpg"
+            class="d-block w-100"
+            alt="Gấu bông metoo"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/banner/banner2.jpg"
+            class="d-block w-100"
+            alt="Giao hàng hoả tốc"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Banner carousel Start-->
+    <!--Policy Start-->
+    <div class="container mt-5 mb-5">
+      <h2 class="text-center mt-3 mb-4 header-policy">--- Chính sách ---</h2>
+      <div class="col">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img
+              src="images/policies/giat-gau-bong.png"
+              class="img-policy"
+              alt="Giặt gấu bông"
+            />
+            <h5 class="mt-2">Giặt gấu bông</h5>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="images/policies/goi-qua-free.png"
+              class="img-policy"
+              alt="Gói quà free"
+            />
+            <h5 class="mt-2">Gói quà free</h5>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="images/policies/nen-nho-gau.png"
+              class="img-policy"
+              alt="Nén nhỏ gấu"
+            />
+            <h5 class="mt-2">Nén nhỏ gấu</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Policy End-->
+
+    <!--Products Start-->
+    <!--Hot products Start-->
+    <div class="container mt-3 mb-5">
+      <h2 class="text-center mt-3 mb-4 header-policy">
+        --- Sản phẩm bán chạy ---
+      </h2>
+      <div class="col">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../../images/products/teddy/socola/teddy-socola-1.jpg"
+                class="card-img-top"
+                alt="Gấu bông teddy socola 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông teddy socola 1</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">1m</a>
+                            <a href="#" class="size-button">1m4</a>
+                            <a href="#" class="size-button">1m7</a>
+        </div>
+        <a href="../../src/products/highend/teddysocola/socola-1.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../../images/products/pokemon/pikachu-1.jpg"
+                class="card-img-top"
+                alt="Gấu bông Pikachu"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông Pikachu</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">25cm</a>
+        <a href="#" class="size-button">50cm</a>
+        <a href="#" class="size-button">75cm</a>
+        </div>
+        <a href="/src/products/cartoon/pokemon/pikachu-1.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../../images/products/pooh/pooh-1.jpg"
+                class="card-img-top"
+                alt="Gấu Pooh"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu Pooh 1</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">30cm</a>
+        <a href="#" class="size-button">60cm</a>
+        <a href="#" class="size-button">90cm</a>
+        </div>
+        <a href="/src/products/cartoon/pooh/pooh-1.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../../images/products/doraemon/doraemon-1.jpg"
+                class="card-img-top"
+                alt="Gấu bông Doraemon"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông Doraemon 1</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">40cm</a>
+        <a href="#" class="size-button">80cm</a>
+        <a href="#" class="size-button">1m2</a>
+        </div>
+        <a href="/src/products/cartoon/doraemon/doraemon-1.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+    </div>
+    <!--Hot products End-->
+    <!--Explore Start-->
+    <div class="container-fluid mb-5">
+      <h2 class="text-center mt-3 mb-4 header-policy">
+        --- Khám phá sản phẩm bán chạy ---
+      </h2>
+      <div class="container col">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../../images/products/teddy/socola/teddy-socola-1.jpg"
+                class="card-img-top"
+                alt="Gấu bông teddy socola"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông teddy socola</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">1m</a>
+        <a href="#" class="size-button">1m4</a>
+        <a href="#" class="size-button">1m7</a>
+        </div>
+        <a href="../../src/products/highend/teddysocola/socola-1.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="/images/products/teddy/socola/teddy-socola-2.jpg"
+                class="card-img-top"
+                alt="Gấu bông teddy socola 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông teddy socola 2</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">1m</a>
+        <a href="#" class="size-button">1m4</a>
+        <a href="#" class="size-button">1m7</a>
+        </div>
+        <a href="/src/products/highend/teddysocola/socola-2.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="/images/products/teddy/socola/teddy-socola-3.jpg"
+                class="card-img-top"
+                alt="Gấu bông teddy socola 3"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông teddy socola 3</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">1m</a>
+        <a href="#" class="size-button">1m4</a>
+        <a href="#" class="size-button">1m7</a>
+        </div>
+        <a href="/src/products/highend/teddysocola/socola-3.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="/images/products/teddy/socola/teddy-socola-4.jpg"
+                class="card-img-top"
+                alt="Gấu bông teddy socola 4"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông teddy socola 4</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">1m</a>
+        <a href="#" class="size-button">1m4</a>
+        <a href="#" class="size-button">1m7</a>
+        </div>
+        <a href="/src/products/highend/teddysocola/socola-4.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="/images/products/teddy/cosco/cosco-1.jpg"
+                class="card-img-top"
+                alt="Gấu bông teddy cosco 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông teddy cosco 1</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">1m1</a>
+        <a href="#" class="size-button">1m4</a>
+        <a href="#" class="size-button">1m8</a>
+        </div>
+        <a href="/src/products/highend/teddycosco/cosco-1.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="/images/products/teddy/cosco/cosco-2.jpg"
+                class="card-img-top"
+                alt="Gấu bông teddy cosco 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông teddy cosco 2</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">1m1</a>
+        <a href="#" class="size-button">1m4</a>
+        <a href="#" class="size-button">1m8</a>
+        </div>
+        <a href="/src/products/highend/teddycosco/cosco-2.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="/images/products/teddy/cosco/cosco-3.jpg"
+                class="card-img-top"
+                alt="Gấu bông teddy cosco 3"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu bông teddy cosco 3</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">1m1</a>
+        <a href="#" class="size-button">1m4</a>
+        <a href="#" class="size-button">1m8</a>
+        </div>
+        <a href="/src/products/highend/teddycosco/cosco-3.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../../../../images/products/pooh/pooh-1.jpg"
+                class="card-img-top"
+                alt="Gấu Pooh 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gấu Pooh 1</h5>
+                <p class="pt-2">Kích thước</p>
+                <div class="row d-block mt-3 mb-3">
+                  <a href="#" class="size-button">30cm</a>
+        <a href="#" class="size-button">60cm</a>
+        <a href="#" class="size-button">90cm</a>
+        </div>
+        <a href="/src/products/cartoon/pooh/pooh-1.html" class="btn btn-success">Chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="row">
+              <a href="src/products/index.html" class="buy-button mt-5">
+                Xem thêm
+              </a>
+        </div>
+        </div>
+        <div class="col-md-4"></div>
+        </div>
+        </div>
+        </div>
+        <!--Explore End-->
+        <!--Products End-->
+
+        <!--Footer Start-->
+        <footer class="w-100 fs-5 text-white">
+            <div class="col">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="navbar-brand align-items-center" href="#">
+                            <img src="images/logo.jpg" alt="Gấu bông online" width="90px" height="80px" />
+                            <strong class="site-logo d-inline-block align-items-center text-center">
+                <h2
+                  class="mt-3 mx-3"
+                  style="
+                    font-family: Impact, Haettenschweiler, Arial Narrow Bold,
+                      sans-serif;
+                  "
+                >
+                  Gấu Bông ONLINE
+                </h2>
+              </strong>
+                        </a>
+                        <div class="mt-4">
+                            <h3>Thiết kế và xây dựng bởi:</h3>
+                            <ul>
+                                <li class="nav-link">Nguyễn Văn A</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h3 class="text-center mb-3">THÔNG TIN LIÊN HỆ</h3>
+                        <p>Địa chỉ: 404 Võ Văn Tần, Phường 7, Quận 3, TP. Hồ Chí Minh</p>
+                        <p>
+                            Điện thoại:
+                            <a href="tel:0788753791" class="text-decoration-none text-white">0788.753.791 (nhấn để gọi)</a
+              >
+            </p>
+            <p>
+              Email:
+              <a
+                href="mailto:abc@123.com"
+                class="text-decoration-none text-white"
+                >abc@123.com (nhấn để soạn email)</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="text-center mb-3">BẢN ĐỒ</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2330.28556804644!2d106.71206927988663!3d10.806903457577732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175299e39b20469%3A0x57a6f4dadbdb2a43!2sUniversity!5e0!3m2!1svi!2s!4v1683387686819!5m2!1svi!2s"
+              allowfullscreen=""
+              loading="lazy"
+              class="mb-3"
+              referrerpolicy="no-referrer-when-downgrade"
+              style="
+                border: none;
+                border-radius: 15px;
+                width: 100%;
+                height: 30vh;
+              "
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Script(s)-->
+    <script src="scripts/vendor/bootstrap.bundle.min.js"></script>
+    <script src="scripts/vendor/jquery-3.7.1.min.js"></script>
+    <script src="scripts/validate-login.js"></script>
+    <script src="scripts/validate-register.js"></script>
+  </body>
+</html>
